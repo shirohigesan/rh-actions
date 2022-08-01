@@ -4,7 +4,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is pen"
+      - run: echo "this is secret=${{secrets.TEST_SECRET}}"
       - uses: actions/checkout@v3
       - run: |
           ls -al
